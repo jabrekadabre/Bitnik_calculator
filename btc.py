@@ -5,7 +5,7 @@ while True:
     print(" (2) tak zasluzek hocem imeti")
     print(" (3) X krat vec hocem imeti")
     print(" (4) denar po davku")
-    print(" (5) odvem denarja")
+    print(" (5) odvzem denarja")
     print()
     izbira_nacina = int(input("izberi nacin: "))
     if(izbira_nacina == 1):
