@@ -1,0 +1,78 @@
+while True:
+    print("                      >>>-->  BITCOIN CALCULATOR  <--<<<")
+    print()
+    print(" (1) zanima me zasluzek")
+    print(" (2) tak zasluzek hocem imeti")
+    print(" (3) X krat vec hocem imeti")
+    print(" (4) denar po davku")
+    print(" (5) odvem denarja")
+    print()
+    izbira_nacina = int(input("izberi nacin: "))
+    if(izbira_nacina == 1):
+        print()
+        print(" >-->>> NACIN 1 <<<--<")
+        print()
+        prvotno = float(input("prvotni denar v EUR (koliko evrou ste dali v BTC bankomat): "))
+        denar = float(input("trenuten denar v EUR (denar v evrih v BTC denarnici trenutno):"))
+        izbankomata = denar-((denar*5)/100)
+        print("iz bankomata dobis: ",izbankomata)
+        print ("izguba: ",denar*5/100)
+        zasluzek = izbankomata - prvotno
+        print("resnicno novi denar: ",zasluzek)
+        kratnik = izbankomata/prvotno
+        print("dobil si: %.3f"% kratnik,"X   vec kot si vlozil")
+        print()
+        print("--> KONEC <--")
+        print()
+    elif(izbira_nacina == 2):
+        print()
+        print(" >-->>> NACIN 2 <<<--<")
+        print()
+        prvotno = float(input("prvotni denar v EUR (koliko evrou ste dali v BTC bankomat): "))
+        zasluzek = float(input("zelen zasluzek: "))
+        izbankomata = prvotno + zasluzek
+        imetmors = izbankomata/(1-5/100)
+        print("imeti bos moral: ", imetmors, "EUR (na BTC denarnici)")
+        kratnik = izbankomata/prvotno
+        print("dobil si: %.3f"% kratnik,"X   vec kot si vlozil")
+        print()
+        print("--> KONEC <--")
+        print()
+    elif(izbira_nacina == 3):
+        print()
+        print(" >-->>> NACIN 3 <<<--<")
+        print()
+        prvotno = float(input("prvotni denar v EUR (koliko evrou ste dali v BTC bankomat): "))
+        kratnik = float(input("koliko krat vec? : "))
+        izbankomata = kratnik*prvotno
+        trenutni = izbankomata/(1-5/100)
+        print("iz bankomata dobis", izbankomata)
+        print("imeti bos moral", trenutni , "EUR (na BTC denarnici)")
+        print()
+        print("--> KONEC <--")
+        print()
+    elif(izbira_nacina == 4):
+        print()
+        print(" >-->>> NACIN 4 <<<--<")
+        print()
+        prvotno = float(input("prvotni denar v EUR pred davkom: "))
+        podavku = prvotno-((prvotno*5)/100)
+        print("po davku", podavku, "EUR")
+        print ("izguba: ",prvotno*5/100)
+        print()
+        print("--> KONEC <--")
+        print()
+    elif(izbira_nacina == 5):
+        print()
+        print(" >-->>> NACIN 5 <<<--<")
+        print()
+        kokdol = float(input("koliko denarja zelis dobiti iz bankomata: "))
+        doldasvresnici = kokdol/(1- 5/100)
+        print("v resnici si si odvzel:", doldasvresnici,"EUR")
+        print ("izguba: ",doldasvresnici-kokdol)
+        print()
+        print("--> KONEC <--")
+        print()
+        
+        
+    
