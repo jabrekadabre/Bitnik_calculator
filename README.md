@@ -2,13 +2,12 @@
 
 
 
-Racunanje denarja, če vporabljaš Bitnik kot posrednik med BTC in EUR.
+Racunanje izgubljenega denarja, če vporabljaš Bitnik kot posrednik med BTC in EUR.
 
 
-# note:
  - Jezik v katerem so napisana navodila za uporabo (če zaženeš program) je slovenščina.
- - program je bil napisan za zabavo, zato so predtorniki morda pretečeni.
- - have fun
+ - program je bil napisan za zabavo, zato so pretvorniki sigurno že pretečeni.
+ 
 
 
 Calculate how much money bitcoin ATM (Bitnik) took from you.
